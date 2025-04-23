@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import styles from "./ArtistPage.module.css"; // Import the CSS module
+import styles from "./ArtistPage.module.css"; 
 
 function ArtistPage() {
   const { id } = useParams();
@@ -24,14 +24,14 @@ function ArtistPage() {
         const artist = data.results[0];
         setArtistDetails(artist);
 
-        // Fetch albums
+        
         fetch(`https://itunes.apple.com/lookup?id=${id}&entity=album`)
           .then((res) => res.json())
           .then((albumData) => {
             setAlbums(albumData.results);
           });
 
-        // Fetch top tracks using artist name
+        
         fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(artist.artistName)}&media=music&limit=10`)
           .then((res) => res.json())
           .then((trackData) => {

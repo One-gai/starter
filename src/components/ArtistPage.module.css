@@ -1,89 +1,148 @@
-/* ArtistPage.module.css */
 
-/* Main container */
+
+
 .artistPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
-    min-height: 100vh;
-  }
-  
-  /* Title */
-  .artistPage h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #222;
-  }
-  
-  /* Image Styling */
-  .artistPage img {
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  /* Genre and Country */
-  .artistPage p {
-    font-size: 1.2rem;
-    margin: 5px 0;
-    color: #555;
-  }
-  
-  /* Albums Section */
-  .albums {
-    margin-top: 40px;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .albumCard {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .albumCard img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  .albumCard p {
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  /* Track List Section */
-  .tracks {
-    margin-top: 40px;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .trackCard {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .trackCard p {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  audio {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #121212; 
+  min-height: 100vh;
+}
+
+
+.artistPage h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #1db954; 
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+
+.artistPage img {
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); 
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.artistPage img:hover {
+  transform: scale(1.05); 
+}
+
+
+.artistPage p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: #b3b3b3; 
+  text-align: center;
+}
+
+
+.albums {
+  margin-top: 40px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.albumCard {
+  background-color: #1d1d1d; 
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.albumCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); 
+}
+
+.albumCard img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.albumCard img:hover {
+  transform: scale(1.05); 
+}
+
+.albumCard p {
+  font-weight: bold;
+  margin: 15px 0;
+  color: #fff; 
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+
+.tracks {
+  margin-top: 40px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.trackCard {
+  background-color: #1d1d1d; 
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trackCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); 
+}
+
+.trackCard p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff; 
+}
+
+.trackCard .track-info {
+  font-size: 0.9rem;
+  color: #b3b3b3;
+  margin-top: 0.5rem;
+}
+
+
+
+audio {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: transparent; 
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+audio:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 20px rgba(29, 185, 84, 0.8); 
+}
+
+
+audio:focus {
+  background-color: transparent; 
+  box-shadow: 0 0 10px rgba(29, 185, 84, 0.9); 
+  transform: scale(1.02); 
+}
+
+
+

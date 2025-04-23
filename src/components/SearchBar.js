@@ -1,4 +1,4 @@
-// src/components/SearchBar.js
+
 import React, { useState } from "react";
 import styles from "./SearchBar.module.css";
 

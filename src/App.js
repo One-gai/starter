@@ -9,6 +9,7 @@ import PopularArtists from "./components/PopularArtists";
 import NewReleases from "./components/NewReleases";
 import EditorsPicks from "./components/EditorsPicks";
 import GenreFilter from "./components/GenreFilter";
+import './App.css';
 
 function App() {
   const [songs, setSongs] = useState([]);

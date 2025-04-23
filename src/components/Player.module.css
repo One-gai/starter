@@ -1,18 +1,78 @@
+
 .player {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .player audio {
-    width: 300px;
-    margin-top: 10px;
-  }
-  
-  .player h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.8);
+  max-width: 320px;
+  width: 100%;
+}
+
+.player audio {
+  width: 100%;
+  border-radius: 12px;
+  outline: none;
+  background-color: #1db954;
+  transition: background-color 0.3s ease;
+}
+
+.player audio::-webkit-media-controls-panel {
+  background-color: #121212; 
+}
+
+.player audio::-webkit-media-controls-play-button {
+  background-color: #1db954; 
+}
+
+.player audio:hover {
+  background-color: #1ed760; 
+  cursor: pointer;
+}
+
+.player h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase; 
+}
+
+.player p {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.player .song-info {
+  font-size: 1rem;
+  color: #b3b3b3;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.player .play-btn {
+  background-color: #1db954;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.player .play-btn:hover {
+  background-color: #1ed760; 
+}
+
+.player .play-btn:focus {
+  outline: none;
+}
