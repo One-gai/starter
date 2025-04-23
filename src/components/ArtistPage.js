@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./ArtistPage.module.css"; // Import the CSS module
+import styler from "./Background.module.css"
 
 function ArtistPage() {
   const { id } = useParams();
@@ -48,7 +49,8 @@ function ArtistPage() {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
-  return (
+  return (<div className={styler.backgroundz}>
+
     <div className={styles.artistPage}>
       <h1>{artistDetails.artistName}</h1>
       <img className={styles.artistImage} src={artistDetails.artworkUrl100} alt={artistDetails.artistName} />
@@ -86,6 +88,8 @@ function ArtistPage() {
         )}
       </div>
     </div>
+  </div>
+    
   );
 }
 

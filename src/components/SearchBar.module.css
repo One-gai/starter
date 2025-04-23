@@ -12,19 +12,27 @@
   border: 2px solid #ccc;
   border-radius: 999px;
   width: 250px;
+  transition: all 0.4s ease-in-out;
 }
-
+.searchBar input:focus{
+  width: 300px;
+  border-color: #6c63ff;
+  outline: none;
+  
+}
 .searchBar button {
-  padding: 0.5rem 1rem;
+  padding: 10px 15px;
   background-color: #6c63ff;
   color: white;
   border: none;
   border-radius: 999px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .searchBar button:hover {
   background-color: #4b45c4;
+  transform: scale(1.2);
 }
+

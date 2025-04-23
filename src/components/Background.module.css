@@ -1,19 +1,4 @@
-/* App.css */
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f4f4f8;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  h1 {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 2.5rem;
-    color: #333;
-  }
-  .gradient-bg {
+.gradient-bg {
     height: 100vh; /* full screen */
     background: linear-gradient(-45deg, #3e70ce, #b31a1a, #3eced3, #f39c12);
     background-size: 400% 400%;
@@ -32,3 +17,4 @@ body {
       background-position: 0% 50%;
     }
   }
+  

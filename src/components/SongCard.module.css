@@ -2,6 +2,7 @@
 .songCard {
     border: 1px solid #eee;
     border-radius: 16px;
+    border-width: 3px;
     padding: 1rem;
     width: 300px;
     text-align: center;
@@ -12,6 +13,7 @@
   
   .songCard:hover {
     transform: scale(1.03);
+    border-color: palevioletred #6c63ff;
   }
   
   .songCard img {

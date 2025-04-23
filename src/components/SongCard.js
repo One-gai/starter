@@ -21,7 +21,7 @@ function SongCard({ song }) {
         
 
       )}
-      console.log("Navigating to artistId:", artistId);
+      {console.log("Navigating to artistId:", artistId)}
     </div>
   );
 }
